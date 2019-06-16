@@ -7,7 +7,7 @@
             <!-- <svg class="circular-loader" viewBox="-4 -4 78 78"><circle class="loader-path" cx="35" cy="35" r="32" fill="white" stroke="#f4511e" stroke-width="9" /></svg> -->
             <svg viewBox="-3 -3 106 106" style="display: block; width: 100%;" class="circular-loader">
               <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="white" stroke-width="9" fill-opacity="0"></path>
-              <path class="loader-path" d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#F4511E" stroke-width="9" fill-opacity="0"></path>
+              <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#F4511E" stroke-width="9" fill-opacity="0" style="stroke-dasharray: 300, 300; stroke-dashoffset: 255;"></path>
             </svg>
 
             <v-btn fab dark color="deep-orange darken-1" class="spinBtn">

@@ -5,22 +5,24 @@
     </v-toolbar> -->
 
     <v-content>
-      <HelloWorld/>
+      <SpinButton/>
     </v-content>
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import SpinButton from './components/SpinButton'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    SpinButton
   },
   data () {
     return {
-      
+
     }
   }
 }
