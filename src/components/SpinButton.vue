@@ -64,7 +64,7 @@ export default {
   width: 100%;
   position: absolute;
   top: 0px;
-  left: 0.4px;
+  left: 0.5px;
   margin: auto;
 
   width: 70px;
