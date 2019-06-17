@@ -2,26 +2,21 @@
   <v-container>
     <v-layout row wrap>
       <v-flex>
-        <div class="mx-3 lighten-1 pa-5">
-
-          <div class="loader">
-            <svg class="circular-loader" viewBox="-3 -3 106 106" v-show="active">
+        <div class="mx-3 lighten-1 pa-5" >
+          <div class="loader" @click="spin">
+            <svg class="circular-loader" viewBox="-4 -4 108 108" v-show="active">
               <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="white" stroke-width="12" fill-opacity="0"></path>
               <path class="loader-path" d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#F4511E" stroke-width="12" fill-opacity="0"></path>
             </svg>
-
-            <v-btn fab dark color="deep-orange darken-1" class="spinBtn" v-if="buttonShow">
+            <v-btn depressed fab dark color="deep-orange darken-1" class="spinBtn" v-if="buttonShow">
               <v-icon dark>add</v-icon>
             </v-btn>
-
-            <v-btn fab dark color="blue-grey darken-3" class="spinBtn" v-else>
+            <v-btn depressed fab dark color="blue-grey darken-3" class="spinBtn" v-else>
               <v-icon dark>done</v-icon>
             </v-btn>
           </div>
-
         </div>
       </v-flex>
-
     </v-layout>
   </v-container>
 </template>
@@ -31,58 +26,45 @@ export default {
   data: () => ({
     active: false,
     buttonShow: true,
+    isSubmit: false,
   }),
   methods: {
+    spin() {
+      let vm = this;
 
-  },
-  created() {
-    let vm = this;
-    vm.active = true;
+      if (this.isSubmit == false) {
+        this.active = true;
+        this.isSubmit = true;
+      }
 
-    setTimeout(function() {
-      vm.active = false;
-      vm.buttonShow = false;
-    }, 1000);
-
+      setTimeout(function() {
+        vm.active = false;
+        vm.buttonShow = false;
+      }, 1000);
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 * {
   box-sizing: border-box;
 }
-
-
-/* Button inside  */
-.spinBtn {
-  box-shadow: none!important;
-  /* position: absolute;
-  top: 0.2px;
-  left: 0.045px; */
-}
-
-
-
-
-
-/* SVG Cirlce */
 .loader {
   position: relative;
-  margin: 6px 8px;
   width: 70px;
   height: 70px;
 }
 
-/* Spin */
+
 .circular-loader {
   animation: rotate 0.8s linear 1;
   height: 100%;
   transform-origin: center center;
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0.4px;
   margin: auto;
 
   width: 70px;

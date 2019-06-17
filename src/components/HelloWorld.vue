@@ -9,22 +9,17 @@
               <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="white" stroke-width="9" fill-opacity="0"></path>
               <path class="loader-path" d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#F4511E" stroke-width="9" fill-opacity="0"></path>
             </svg>
-
             <v-btn fab dark color="deep-orange darken-1" class="spinBtn">
               <v-icon dark>add</v-icon>
             </v-btn>
 
           </div>
-
-
           <!-- <v-btn fab dark color="deep-orange darken-1">
             <v-icon dark>add</v-icon>
           </v-btn>
           <v-btn fab dark color="blue-grey darken-3">
             <v-icon dark>done</v-icon>
           </v-btn> -->
-
-
         </div>
       </v-flex>
       <v-flex xs12 md4>

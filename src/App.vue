@@ -1,24 +1,29 @@
 <template>
   <v-app>
-    <!-- <v-toolbar app>
-
-    </v-toolbar> -->
-
     <v-content>
       <SpinButton/>
+      <ZoomInButton/>
+      <ZoomOutButton/>
+      <TextField/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+// import HelloWorld from './components/HelloWorld'
 import SpinButton from './components/SpinButton'
+import ZoomInButton from './components/ZoomInButton'
+import ZoomOutButton from './components/ZoomOutButton'
+import TextField from './components/TextField'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    SpinButton
+    // HelloWorld,
+    SpinButton,
+    ZoomInButton,
+    ZoomOutButton,
+    TextField
   },
   data () {
     return {
@@ -27,3 +32,7 @@ export default {
   }
 }
 </script>
+
+<style>
+
+</style>
